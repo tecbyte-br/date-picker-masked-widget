@@ -29,7 +29,7 @@
     },
     "autoload": {
         "psr-4": {
-            "dianakaal\\date-picker-masked-widget\\": ""
+            "dianakaal\\DatePickerMaskedWidget\\": ""
         }
     },
     "extra": {
