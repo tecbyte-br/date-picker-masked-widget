@@ -27,7 +27,6 @@
     "require-dev": {
         "phpunit/phpunit": "4.*"
     },
-    "minimum-stability": "stable",
     "autoload": {
         "psr-4": {
             "dianakaal\\date-picker-masked-widget\\": ""
