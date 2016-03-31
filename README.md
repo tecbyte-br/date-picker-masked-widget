@@ -28,9 +28,10 @@ USAGE
 -----
 
 
-## Plain Date Picker
+#### Plain Date Picker
 
 ------> WITH A MODEL <------
+
 **as a plain widget**
 ```
 <?php
@@ -113,7 +114,7 @@ use dianakaal\DatePickerMaskedWidget\DatePickerMaskedWidget;
     ]);
 ?>
 ```
-##Date Range Picker
+####Date Range Picker
 -----------------
 
 ------> WITHOUT A MODEL <------
