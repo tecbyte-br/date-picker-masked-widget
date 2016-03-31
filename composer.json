@@ -32,7 +32,7 @@
             "dianakaal\\date-picker-masked-widget\\": ""
         }
     },
-    "extra": 
+    "extra": {
         "asset-installer-paths": {
             "bower-asset-library": "vendor/bower"
         }
