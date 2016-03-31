@@ -19,7 +19,7 @@ use yii\web\AssetBundle;
  */
 class DateRangePickerMaskedWidgetAsset extends AssetBundle
 {
-    public $sourcePath = '@vendor/dianakaal/datePickerMaskedWidget';
+    public $sourcePath = '@vendor/dianakaal/date-picker-masked-widget';
 
     public $css = [
         'bootstrap-daterangepicker.css'
