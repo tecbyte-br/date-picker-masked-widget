@@ -23,7 +23,6 @@ or add
 
 to the require section of your application's `composer.json` file.
 
-========================================================================
 
 USAGE
 -----
@@ -32,12 +31,11 @@ USAGE
 ## Plain Date Picker
 
 ------> WITH A MODEL <------
+**as a plain widget**
 ```
 <?php
 use dianakaal\DatePickerMaskedWidget\DatePickerMaskedWidget;
 ?>
-
-**as a plain widget**
 <?=
     DatePickerMaskedWidget::widget([
             'model' => '$modelName',
@@ -63,29 +61,29 @@ use dianakaal\DatePickerMaskedWidget\DatePickerMaskedWidget;
 ```
 **with an ActiveForm**
 ```
-    <?=
-        $form->field($model, 'nameOfField')->widget(
-            DatePickerMaskedWidget::className(), [
-                'inline' => false,
-                'template' => '{addon}{input}',
-                'language' => 'fi',
-                'clientOptions' => [
-                    'autoclose' => true,
-                    'clearBtn' => true,
-                    'format' => 'dd.mm.yyyy',
-                    'todayBtn' => 'linked',
-                    'todayHighlight' => 'true',
-                    'weekStart' => '1',
-                    'calendarWeeks' => 'true',
-                    'orientation' => 'top left',
-                ],
-                'maskOptions' => [
-                    'alias' => 'dd.mm.yyyy'
-                ],
+<?=
+    $form->field($model, 'nameOfField')->widget(
+        DatePickerMaskedWidget::className(), [
+            'inline' => false,
+            'template' => '{addon}{input}',
+            'language' => 'fi',
+            'clientOptions' => [
+                'autoclose' => true,
+                'clearBtn' => true,
+                'format' => 'dd.mm.yyyy',
+                'todayBtn' => 'linked',
+                'todayHighlight' => 'true',
+                'weekStart' => '1',
+                'calendarWeeks' => 'true',
+                'orientation' => 'top left',
+            ],
+            'maskOptions' => [
+                'alias' => 'dd.mm.yyyy'
+            ],
 
-            ]
-        );
-    ?>
+        ]
+    );
+?>
 ```
 ------> WITHOUT A MODEL <------
 ```
@@ -123,46 +121,46 @@ use dianakaal\DatePickerMaskedWidget\DatePickerMaskedWidget;
 <?php
 use dianakaal\DatePickerMaskedWidget\DateRangePickerMaskedWidget;
 ?>
-    <?=
-        DateRangePickerMaskedWidget::widget([
-            'name' => 'test',
-            'value' => '30-16-2016'
-            'attribute' => false,
-            'template' => '{addon}{input}',
-            'language' => 'fi',
-            'clientOptions' => [
-                'autoclose' => true,
-                'clearBtn' => true,
-                'format' => 'dd.mm.yyyy',
-                'todayBtn' => 'linked',
-                'todayHighlight' => 'true',
-                'weekStart' => '1',
-                'calendarWeeks' => 'true',
-                'orientation' => 'top left',
-            ],
-            'maskOptions' => [
-                'alias' => 'dd.mm.yyyy'
-            ],
-        ]);
-    ?>
+<?=
+    DateRangePickerMaskedWidget::widget([
+        'name' => 'test',
+        'value' => '30-16-2016'
+        'attribute' => false,
+        'template' => '{addon}{input}',
+        'language' => 'fi',
+        'clientOptions' => [
+            'autoclose' => true,
+            'clearBtn' => true,
+            'format' => 'dd.mm.yyyy',
+            'todayBtn' => 'linked',
+            'todayHighlight' => 'true',
+            'weekStart' => '1',
+            'calendarWeeks' => 'true',
+            'orientation' => 'top left',
+        ],
+        'maskOptions' => [
+            'alias' => 'dd.mm.yyyy'
+        ],
+    ]);
+?>
 ```
 ------> WITH A MODEL <------
 ```
 <?php
 use dianakaal\DatePickerMaskedWidget\DateRangePickerMaskedWidget;
 ?>
-    <?=
-        $form->field($model, 'startDate')->widget(DateRangePickerMaskedWidget::className(), [
-            'attributeTo' => 'endDate',
-            'form' => $form, // best for correct client validation
-            'language' => 'es',
-            'size' => 'lg',
-            'clientOptions' => [
-                'autoclose' => true,
-                'format' => 'dd-M-yyyy'
-            ]
-        ]);
-    ?>
+<?=
+    $form->field($model, 'startDate')->widget(DateRangePickerMaskedWidget::className(), [
+        'attributeTo' => 'endDate',
+        'form' => $form, // best for correct client validation
+        'language' => 'es',
+        'size' => 'lg',
+        'clientOptions' => [
+            'autoclose' => true,
+            'format' => 'dd-M-yyyy'
+        ]
+    ]);
+?>
 ```
 --------------------------------------------------------------------------------
 
