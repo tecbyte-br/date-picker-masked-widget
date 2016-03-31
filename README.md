@@ -14,12 +14,12 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-composer require dianakaal/date-picker-masked-widget="1"
+composer require dianakaal/date-picker-masked-widget="*"
 ```
 or add
 
 ```json
-"composer require dianakaal/date-picker-masked-widget
+"dianakaal/date-picker-masked-widget": "*"
 ```
 
 to the require section of your application's `composer.json` file.
