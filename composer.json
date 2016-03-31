@@ -1,0 +1,45 @@
+{
+    "name": "dianakaal/yii2-datePickerMaskedWidget",
+    "type": "yii2-extension",
+    "description": "Bootstrap DatePicker widget for Yii2 along with the Yii input mask functionality.",
+    "keywords": [
+        "datepicker",
+        "yii",
+        "yii2",
+        "yii 2",
+        "extension",
+        "widget",
+        "inputmask",
+        "masked input"
+    ],
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "dianakaal",
+            "email": "dianakaal@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        //"yiisoft/yii2": "~2.0.0",
+        //"yiisoft/yii2-bootstrap": "~2.0.3"
+        //"bower-asset/bootstrap-datepicker": "1.4.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "4.*"
+    },
+    "autoload": {//class autoloading specs
+        "psr-4": {
+            "dianakaal\\DatePickerMaskedWidget\\": ""
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        },
+        "asset-installer-paths": {
+            "bower-asset-library": "vendor/bower"
+        }
+    }
+}
+D
