@@ -19,7 +19,7 @@ use yii\web\AssetBundle;
  */
 class DatePickerMaskedWidgetLanguageAsset extends AssetBundle
 {
-    public $sourcePath = '@vendor/dianakaal/DatePickerMaskedWidget/bootstrap-datepicker/dist/locales';
+    public $sourcePath = '@vendor/dianakaal/date-picker-masked-widget/bootstrap-datepicker/dist/locales';
 
     public $depends = [
         'dianakaal\DatePickerMaskedWidget\DateRangePickerMaskedWidgetAsset'
