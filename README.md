@@ -14,7 +14,7 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-composer require dianakaal/date-picker-masked-widget
+composer require dianakaal/date-picker-masked-widget="1"
 ```
 or add
 
