@@ -2,9 +2,8 @@ DatePickerMaskedWidget for Yii2
 ========================================================================
 
 A combination between the bootstrap datepicker and the input mask.
-In other words you can have a date picker as well as an input mask
-simultaneously in the same field.
-========================================================================
+In other words you can have a date picker as well as an input mask simultaneously in the same field.
+
 
 Installation
 ------------
