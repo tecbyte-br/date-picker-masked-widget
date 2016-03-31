@@ -25,18 +25,19 @@ to the require section of your application's `composer.json` file.
 
 ========================================================================
 
-***************************** USAGE *************************************
+USAGE
+-----
 
 
-Plain Date Picker
------------------
+## Plain Date Picker
 
 ------> WITH A MODEL <------
+```
 <?php
 use dianakaal\DatePickerMaskedWidget\DatePickerMaskedWidget;
 ?>
 
-//as a plain widget
+**as a plain widget**
 <?=
     DatePickerMaskedWidget::widget([
             'model' => '$modelName',
@@ -59,8 +60,9 @@ use dianakaal\DatePickerMaskedWidget\DatePickerMaskedWidget;
         ],
     ]);
 ?>
-
-//with an ActiveForm
+```
+**with an ActiveForm**
+```
     <?=
         $form->field($model, 'nameOfField')->widget(
             DatePickerMaskedWidget::className(), [
@@ -84,43 +86,40 @@ use dianakaal\DatePickerMaskedWidget\DatePickerMaskedWidget;
             ]
         );
     ?>
-
-
+```
 ------> WITHOUT A MODEL <------
-
+```
 <?php
 use dianakaal\DatePickerMaskedWidget\DatePickerMaskedWidget;
 ?>
-    <?=
-        DatePickerMaskedWidget::widget([
-            'name' => 'test',
-            'value' => '30-16-2016'
-            'attribute' => false,
-            'template' => '{addon}{input}',
-            'language' => 'fi',
-            'clientOptions' => [
-                'autoclose' => true,
-                'clearBtn' => true,
-                'format' => 'dd.mm.yyyy',
-                'todayBtn' => 'linked',
-                'todayHighlight' => 'true',
-                'weekStart' => '1',
-                'calendarWeeks' => 'true',
-                'orientation' => 'top left',
-            ],
-            'maskOptions' => [
-                'alias' => 'dd.mm.yyyy'
-            ],
-        ]);
-    ?>
---------------------------------------------------------------------------
-
-
-Date Range Picker
+<?=
+    DatePickerMaskedWidget::widget([
+        'name' => 'test',
+        'value' => '30-16-2016'
+        'attribute' => false,
+        'template' => '{addon}{input}',
+        'language' => 'fi',
+        'clientOptions' => [
+            'autoclose' => true,
+            'clearBtn' => true,
+            'format' => 'dd.mm.yyyy',
+            'todayBtn' => 'linked',
+            'todayHighlight' => 'true',
+            'weekStart' => '1',
+            'calendarWeeks' => 'true',
+            'orientation' => 'top left',
+        ],
+        'maskOptions' => [
+            'alias' => 'dd.mm.yyyy'
+        ],
+    ]);
+?>
+```
+##Date Range Picker
 -----------------
 
 ------> WITHOUT A MODEL <------
-
+```
 <?php
 use dianakaal\DatePickerMaskedWidget\DateRangePickerMaskedWidget;
 ?>
@@ -146,9 +145,9 @@ use dianakaal\DatePickerMaskedWidget\DateRangePickerMaskedWidget;
             ],
         ]);
     ?>
-
+```
 ------> WITH A MODEL <------
-
+```
 <?php
 use dianakaal\DatePickerMaskedWidget\DateRangePickerMaskedWidget;
 ?>
@@ -164,7 +163,7 @@ use dianakaal\DatePickerMaskedWidget\DateRangePickerMaskedWidget;
             ]
         ]);
     ?>
-
+```
 --------------------------------------------------------------------------------
 
 Further Information
