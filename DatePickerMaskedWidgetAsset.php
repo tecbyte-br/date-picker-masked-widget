@@ -20,7 +20,7 @@ use yii\web\AssetBundle;
 class DatePickerMaskedWidgetAsset extends AssetBundle
 {
 	//$sourcePath: specifies the root directory that contains the asset files in this bundle. 
-    public $sourcePath = '@vendor/dianakaal/DatePickerMaskedWidget';
+    public $sourcePath = '@vendor/dianakaal/date-picker-masked-widget';
 
     public $js = [
         'jquery.inputmask/dist/jquery.inputmask.bundle.js'
